@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="item"
+            type="com.eup.rxandroidtimedemo.MainActivity" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_Interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interval 2s"
+            android:textAllCaps="false"
+            android:onClick="startTimerInterval"
+            style="@style/style_Button_Rectange"/>
+
+        <Button
+            android:id="@+id/btn_DelayInterval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delay interval"
+            android:textAllCaps="false"
+            android:onClick="startDelayTimer"
+            style="@style/style_Button_Rectange"/>
+
+        <Button
+            android:id="@+id/btn_Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:onClick="clearLogMessage"
+            android:textAllCaps="false"
+            style="@style/style_Button_Rectange"/>
+
+        <Button
+            android:id="@+id/btn_Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:onClick="stopAllTimer"
+            android:textAllCaps="false"
+            style="@style/style_Button_Rectange"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_Log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp" />
+
+</LinearLayout>
+</layout>

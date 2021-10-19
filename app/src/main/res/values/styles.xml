@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_Button_Rectange">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">#030000</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="style_TextView_Output">
+        <item name="textAppearanceBody1">?attr/textAppearanceBody1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+</resources>
